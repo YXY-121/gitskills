@@ -7,5 +7,6 @@
 public class master {
     public void test(){
         System.out.println("我是master");
+        System.out.println("woshidev");
     }
 }
