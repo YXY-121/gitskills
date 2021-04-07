@@ -12,5 +12,6 @@ public class master {
 
        System.out.println("解决冲突");
 
+       System.out.println("尝试合并之后不让dev的信息丢失 ");//git merge --no-ff -m "merge with no-ff" dev
     }
 }
