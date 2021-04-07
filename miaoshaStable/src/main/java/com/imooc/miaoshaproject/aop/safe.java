@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
  * Time: 10:06
  * 描述:
  */
-//@Aspect
+@Aspect
 @Component
 public class safe {
     @Autowired
@@ -27,11 +27,11 @@ public class safe {
     @Autowired
     private RedisTemplate redisTemplate;
 
-    //@Pointcut("execution(public * com.imooc.miaoshaproject.controller.OrderController.*.*(..))")
+    @Pointcut("execution(public * com.imooc.miaoshaproject.controller.OrderController.*.*(..))")
     public void isLogin(){
 
     }
-  //  @Before("isLogin()")
+  @Before("isLogin()")
     public void before() throws BusinessException {
         String token=httpServletRequest.getParameterMap().get("token")[0];
         System.out.println(token);
