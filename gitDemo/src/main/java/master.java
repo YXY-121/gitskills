@@ -11,6 +11,7 @@ public class master {
 
 
        System.out.println("解决冲突");
+       
 
     }
 }
