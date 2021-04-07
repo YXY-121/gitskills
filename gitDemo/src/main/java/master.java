@@ -10,5 +10,7 @@ public class master {
         System.out.println("dev修改");
         System.out.println("dev先提交 测试冲突。");
         System.out.println("dev先提交 测试冲突");
+
+        System.out.println("测试dev 和master的冲突 dev");
     }
 }
